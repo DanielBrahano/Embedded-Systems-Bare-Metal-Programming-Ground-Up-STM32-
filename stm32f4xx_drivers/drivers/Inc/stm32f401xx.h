@@ -175,6 +175,41 @@ typedef struct
 #define GPIOH_PCLK_DI() (RCC->RCC_AHB1ENR &= ~(1 << 7))
 
 /*
+ * Macros to reset GPIOx peripherals
+ */
+#define GPIOA_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 0));   /* Set the bit to reset GPIOA */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 0));  /* Clear the bit to bring GPIOA out of reset */ \
+} while (0)
+
+#define GPIOB_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 1));   /* Set the bit to reset GPIOB */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 1));  /* Clear the bit to bring GPIOB out of reset */ \
+} while (0)
+
+#define GPIOC_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 2));   /* Set the bit to reset GPIOC */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 2));  /* Clear the bit to bring GPIOC out of reset */ \
+} while (0)
+
+#define GPIOD_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 3));   /* Set the bit to reset GPIOD */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 3));  /* Clear the bit to bring GPIOD out of reset */ \
+} while (0)
+
+#define GPIOE_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 4));   /* Set the bit to reset GPIOE */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 4));  /* Clear the bit to bring GPIOE out of reset */ \
+} while (0)
+
+#define GPIOH_REG_RESET() do { \
+    (RCC->RCC_AHB1RSTR |= (1 << 7));   /* Set the bit to reset GPIOH */ \
+    (RCC->RCC_AHB1RSTR &= ~(1 << 7));  /* Clear the bit to bring GPIOH out of reset */ \
+} while (0)
+
+
+
+/*
  * Clock Disable Macros for I2Cx peripherals
  */
 #define I2C1_PCLK_DI() (RCC->RCC_APB1ENR &= ~(1 << 21))
