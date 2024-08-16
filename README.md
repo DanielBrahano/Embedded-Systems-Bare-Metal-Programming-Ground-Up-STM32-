@@ -22,17 +22,26 @@ As I delve into this course, I’m learning the fundamentals of bare-metal progr
 - **/Docs**: Documentation and any additional resources I've found useful.
 - **.metadata**: IDE-specific files (excluded from version control).
 
+### Device Required
+
+To run the code provided in this repository, you'll need the following hardware:
+
+- **STM32 Nucleo F401RE Development Board**
+
+This board features the STM32F401RE microcontroller and provides a comprehensive platform for embedded development.
+
 ### Getting Started
 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/DanielBrahano/Embedded-Systems-Bare-Metal-Programming-Ground-Up-STM32-.git```
+   git clone https://github.com/DanielBrahano/Embedded-Systems-Bare-Metal-Programming-Ground-Up-STM32-.git
 
-   Open in IDE
+2. **Open in IDE**
 
-2. Open the project in STM32CubeIDE or another compatible IDE to begin exploring the code.
+   Open the project in STM32CubeIDE or another compatible IDE to begin exploring the code.
 
-3. Build and Run
+3. **Build and Run**
 
-  Follow the instructions in the example folders to build and run the code on your STM32 development board.
+  Build: Right click on a certain project and the press build
+  Run: Right click on a  project and press "Run As: STM32 Application project
