@@ -1,0 +1,137 @@
+/*
+ * stm32f401xx_gpio_driver.c
+ *
+ *  Created on: Jul 6, 2024
+ *      Author: Daniel
+ */
+
+#include "stm32f401xx_gpio_driver.h"
+
+ /*
+  * Peripheral Clock setup
+  */
+
+/****************************************
+ * @fn			- GPIO_PeriClockControl
+ *
+ * @brief		- This function enables or disables peripheral clock for given GPIO port
+ *
+ * @param[in]	- Base address of gpio peripheral
+ * @param[in]	- ENABLE or DISABLE macros
+ *
+ *
+ * @return 		- None
+ *
+ * @Note 		- None
+ */
+ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi)
+ {
+	 if(EorDi == ENABLE)
+	 {
+		 switch (pGPIOx)
+		 {
+		 case GPIOA:
+			 GPIOA_PCLK_EN();
+			 break;
+		 case GPIOB:
+			 GPIOB_PCLK_EN();
+			 break;
+		 case GPIOC:
+			 GPIOC_PCLK_EN();
+			 break;
+		 case GPIOD:
+			 GPIOD_PCLK_EN();
+			 break;
+		 case GPIOE:
+			 GPIOE_PCLK_EN();
+			 break;
+		 case GPIOH:
+			 GPIOH_PCLK_EN();
+			 break;
+		 default:
+			 printf("%s: ERROR - wrong pGPIOx parameter\n");
+			 break;
+		 }
+	 } else
+	 {
+		 switch (pGPIOx)
+		 {
+		 case GPIOA:
+			 GPIOA_PCLK_DI();
+			 break;
+		 case GPIOB:
+			 GPIOB_PCLK_DI();
+			 break;
+		 case GPIOC:
+			 GPIOC_PCLK_DI();
+			 break;
+		 case GPIOD:
+			 GPIOD_PCLK_DI();
+			 break;
+		 case GPIOE:
+			 GPIOE_PCLK_DI();
+			 break;
+		 case GPIOH:
+			 GPIOH_PCLK_DI();
+			 break;
+		 default:
+			 printf("%s: ERROR - wrong pGPIOx parameter\n");
+			 break;
+		 }
+	 }
+ }
+
+ /*
+  * Init and De-Init
+  */
+ void GPIO_Init(GPIO_Handle_t *pGPIOHandle)
+ {
+
+ }
+
+ void GPIO_DeInit(GPIO_RegDef_t *pGPIOx)
+ {
+
+ }
+
+ /*
+  * Data read and write
+  */
+ uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)
+ {
+
+ }
+
+ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx)
+ {
+
+ }
+
+ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value)
+ {
+
+ }
+
+ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value)
+ {
+
+ }
+
+ void GPIO_ToggleOutputPing(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)
+ {
+
+ }
+
+
+ /*
+  * IRQ Configuration and ISR handling
+  */
+ void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t ENorDi)
+ {
+
+ }
+
+ void GPIO_IRQHandling(uint8_t PinNumber)
+ {
+
+ }
