@@ -1,0 +1,3 @@
+The complete source code of the course can be found here:
+
+https://blog.embeddedexpert.io/?page_id=153
