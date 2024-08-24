@@ -147,7 +147,7 @@ int main(void)
 		}
 		else
 		{
-			/* Turn on LED */
+			/* Turn off LED */
 			GPIOA->BSRR = (1U <<21);
  8000234:	4b03      	ldr	r3, [pc, #12]	@ (8000244 <main+0x70>)
  8000236:	f44f 1200 	mov.w	r2, #2097152	@ 0x200000

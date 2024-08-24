@@ -1259,3 +1259,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-08-16 17:33:33.001
 !MESSAGE Indexed '4_gpio_input' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-24 12:21:13.668
+!MESSAGE Indexed '5_uart_tx' (3 sources, 7 headers) in 0.362 sec: 781 declarations; 923 references; 13 unresolved inclusions; 29 syntax errors; 612 unresolved names (26%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-24 13:22:30.245
+!MESSAGE Indexed '_uart_printf' (3 sources, 60 headers) in 0.442 sec: 2,684 declarations; 3,762 references; 4 unresolved inclusions; 30 syntax errors; 593 unresolved names (8.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-24 13:22:44.818
+!MESSAGE Indexed '6_uart_printf' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-24 13:26:46.681
+!MESSAGE Indexed '7_uart_modular' (3 sources, 64 headers) in 0.24 sec: 3,214 declarations; 5,274 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-24 13:31:33.205
+!MESSAGE Indexed '8_uart_rx' (5 sources, 67 headers) in 0.256 sec: 3,220 declarations; 5,279 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-08-24 13:46:07.914
+!MESSAGE Won't launch debug session since we failed to locate the binary.

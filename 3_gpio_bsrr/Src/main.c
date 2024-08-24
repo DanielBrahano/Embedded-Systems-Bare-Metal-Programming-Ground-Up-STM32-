@@ -35,7 +35,7 @@ int main(void)
 		}
 		else
 		{
-			/* Turn on LED */
+			/* Turn off LED */
 			GPIOA->BSRR = (1U <<21);
 	}
 	}
