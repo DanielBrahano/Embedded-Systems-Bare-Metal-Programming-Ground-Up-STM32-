@@ -1622,3 +1622,18 @@ Invalid thread id: 1
 java.lang.Exception: Invalid thread id: 1
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-30 18:32:25.288
+!MESSAGE Indexed '11_systick_delay' (5 sources, 65 headers) in 1.05 sec: 2,851 declarations; 4,119 references; 4 unresolved inclusions; 30 syntax errors; 585 unresolved names (7.7%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-30 18:52:20.536
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-30 18:52:20.537
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-30 18:52:20.538
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-30 18:52:20.538
+!MESSAGE Existing sessions are:
