@@ -43,5 +43,6 @@ This board features the STM32F401RE microcontroller and provides a comprehensive
 
 3. **Build and Run**
 
-  Build: Right click on a certain project and the press build
-  Run: Right click on a  project and press "Run As: STM32 Application project
+  Build: Right click on a certain project and the press "Build"
+  
+  Run: Right click on a  project and press "Run As: STM32 Application project"
